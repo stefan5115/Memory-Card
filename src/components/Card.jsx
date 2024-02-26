@@ -8,7 +8,7 @@ function Card({item,isFlipped,onClick}) {
           <p className="text-center">{item.name}</p>
         </div>
         <div className="card-back">
-          <img src="src/image/back-card.jpg" alt="" />
+          <img src="./src/image/back-card.jpg" alt="" />
         </div>
       </div>
     </div>
