@@ -101,7 +101,7 @@ function Game({items, handleLevelUp,difficulty,handleQuit,sound}) {
           <div className="flex flex-row bg-modal w-screen h-screen z-10 fixed top-0 left-0 justify-center items-center">
             <div className="flex flex-col justify-center items-center gap-5">
               <p className="text-4xl">You Win!</p>
-              <img className="max-w-[250px] max-h-[150px]" src="/src/image/chicken.gif" alt="" />
+              <img className="max-w-[250px] max-h-[150px]" src="src/image/chicken.gif" alt="" />
               <p>Your final score is {score}</p>
               <div className="flex flex-col gap-2">
                 {difficulty !== 'hard' && <button onClick={handleNextDifficulty} className="activeButton">Keep Playing</button>}
@@ -118,7 +118,7 @@ function Game({items, handleLevelUp,difficulty,handleQuit,sound}) {
           <div className="flex flex-row bg-modal w-screen h-screen z-10 fixed top-0 left-0 justify-center items-center">
             <div className="flex flex-col justify-center items-center gap-5">
               <p className="text-4xl">Game Over!</p>
-              <img className="max-w-[250px] max-h-[150px]" src="/src/image/strider.gif" alt="" />
+              <img className="max-w-[250px] max-h-[150px]" src="src/image/strider.gif" alt="" />
               <p>Your final score is {score}</p>
               <div className="flex flex-col gap-2">
                 <button onClick={handlePlayAgain}  className="activeButton">Play Again</button>
@@ -130,7 +130,7 @@ function Game({items, handleLevelUp,difficulty,handleQuit,sound}) {
       }
 
       <div className="flex flex-col justify-center items-center " >
-        <img src="/src/image/logo.png" alt="logo" className="w-[300px] h-[100px] mt-[10px]" onClick={handleQuit}/>
+        <img src="src/image/logo.png" alt="logo" className="w-[300px] h-[100px] mt-[10px]" onClick={handleQuit}/>
         <div className="flex gap-[24px] justify-center text-2xl m-[20px]">
           <p>Score: {score}</p>
           <p>High Score: {highScore}</p>
